@@ -1,3 +1,126 @@
+/* основний колір фону #ffffff*/
+/*  колір тексту заголовків #212121 */
+/*  колір тексту абзаців #757575 */
+/* акцентні кольори: блакитний- #2196F3; білий-#FFFFFF */
+/* футер і герой - background: #2F303A; */
+/* команда, кнопки фільтру- background: #F5F4FA */
+/* рамки- border: 1px solid #EEEEEE; */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --darck-bg-color: #2f303a;
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+}
+body {
+  background: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+}
+/* site-nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
 .site-nav .link.current {
   color: var(--accent-color);
+}
+.logo {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-span {
+  color: #000000;
+}
+.mail,
+.tel {
+  color: var(--primary-text-color);
+}
+.tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+}
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero {
+  background: var(--darck-bg-color);
+  color: var(--white-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-btn {
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+}
+/* main */
+.section-title {
+  color: var(--title-text-color);
+}
+.hidden {
+  visibility: hidden;
+}
+/* section-team */
+.section-team {
+  background-color: var(--secondary-bg-color);
+}
+/* footer */
+.footer {
+  background-color: var(--darck-bg-color);
+}
+.logo-span-footer {
+  color: var(--white-color);
+}
+.address {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+.address.office {
+  color: var(--white-color);
+}
+/* portfoio page */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background: var(--secondary-bg-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
 }
