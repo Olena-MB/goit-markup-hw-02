@@ -29,6 +29,11 @@ ul {
 /* site-nav */
 .site-nav .link {
   color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -40,9 +45,9 @@ ul {
 .logo {
   font-family: var(--logo-font);
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: var(--accent-color);
+  text-decoration: none;
 }
 .logo-span {
   color: #000000;
@@ -50,6 +55,11 @@ ul {
 .mail,
 .tel {
   color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .tel:hover,
 .tel:focus {
@@ -69,16 +79,15 @@ ul {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero-btn {
   background-color: var(--accent-color);
-  font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
@@ -88,14 +97,33 @@ ul {
 /* main */
 .section-title {
   color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
+.about .section-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: left;
+}
+
 .hidden {
   visibility: hidden;
 }
 /* section-team */
 .section-team {
   background-color: var(--secondary-bg-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
 /* footer */
 .footer {
   background-color: var(--darck-bg-color);
@@ -103,22 +131,31 @@ ul {
 .logo-span-footer {
   color: var(--white-color);
 }
-.address {
+.address-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  text-decoration: none;
 }
-.address.office {
+.address-link.office {
   color: var(--white-color);
 }
 /* portfoio page */
-.filter-btn {
-  font-weight: 500;
+.portfolio {
   font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
+  line-height: 1.87;
+}
+.portfolio .section-title {
+  text-align: left;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.filter-btn {
   color: var(--title-text-color);
   background: var(--secondary-bg-color);
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
 }
 .filter-btn:hover,
 .filter-btn:focus {
