@@ -26,6 +26,10 @@ body {
 ul {
   list-style: none;
 }
+button {
+  cursor: pointer;
+}
+
 /* site-nav */
 .site-nav .link {
   color: var(--title-text-color);
@@ -62,9 +66,7 @@ ul {
   letter-spacing: 0.02em;
 }
 .tel:hover,
-.tel:focus {
-  color: var(--accent-color);
-}
+.tel:focus,
 .mail:hover,
 .mail:focus {
   color: var(--accent-color);
@@ -139,6 +141,11 @@ ul {
 .address-link.office {
   color: var(--white-color);
 }
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
 /* portfoio page */
 .portfolio {
   font-size: 16px;
@@ -160,4 +167,5 @@ ul {
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
+  color: var(--white-color);
 }
