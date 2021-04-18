@@ -64,7 +64,8 @@ img {
   padding-bottom: 94px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* site-nav */
@@ -109,6 +110,7 @@ img {
 }
 .logo {
   margin-right: 93px;
+  display: block;
 
   font-family: var(--logo-font);
   font-size: 26px;
@@ -143,9 +145,12 @@ img {
 /* hero */
 
 .hero-cont {
-  width: 1600px;
   padding-top: 200px;
   padding-bottom: 280px;
+  padding-left: 420px;
+  padding-right: 420px;
+  align-items: center;
+  margin: 0;
 }
 
 .hero {
@@ -155,6 +160,7 @@ img {
 }
 .hero-title {
   width: 696px;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -163,10 +169,15 @@ img {
   text-transform: uppercase;
 }
 .hero-btn {
+  border-color: transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+
   background-color: var(--accent-color);
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
@@ -225,12 +236,16 @@ img {
 }
 .team-list .item {
   width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list .item + .item {
   margin-left: 30px;
 }
 .team-title {
   margin-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -239,12 +254,14 @@ img {
 .team-list .section-title {
   margin-bottom: 10px;
 }
+.team-list p {
+  padding-bottom: 30px;
+}
 /* footer */
 .footer-cont {
-  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
+  padding-left: auto;
 }
 .footer {
   background-color: var(--darck-bg-color);
@@ -336,7 +353,12 @@ img {
 }
 
 .filter-btn {
+  border-color: transparent;
   border-radius: 4px;
+  overflow: hidden;
+  box-shadow: none;
+  box-decoration-break: none;
+  padding: 6px 22px;
 
   color: var(--title-text-color);
   background: var(--secondary-bg-color);
@@ -348,4 +370,6 @@ img {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
